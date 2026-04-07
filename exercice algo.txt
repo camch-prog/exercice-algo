@@ -1,0 +1,33 @@
+Ex 1 :
+
+1.Créer variable année_de_naissance
+2.Demander l'année de naissance 
+3.année_de_naissance <- année de naissance entrée
+4.Créer une variable année_actuelle
+5.Demander l'année actuelle
+6.année_actuele <- année actuelle entrée
+7.Créer une variable age 
+8.age <- année_actuelle - année_de_naissance
+9.Afficher age
+
+Ex 2 :
+1.Créer une variable prénom
+2.Demander le prénom
+3.prénom <- prénom entré
+4.Créer une variable age
+5.Demander le age
+6.age <- age entré
+7.Créer une variable statut_connexion
+9.statut_connexion <- si l'utilisateur est connecté, vrai
+10.afficher prénom, age, statut_connexion
+
+Ex 3.
+1.Créer 4 variables : variable1, variable2, variable_modifié1, variable_modifié2
+2.Demander variable1
+3.varibale1 <- variable1 entré
+4.Demander variable2
+5.varibale2 <- variable2 entré
+6.variable_modifié1 <- variable1
+7.variable_modifié2 <- variable2
+8.Modifier variable1 par variable_modifié2
+9.Modifier variable2 par variable_modifié1
