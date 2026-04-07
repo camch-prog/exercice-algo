@@ -1,0 +1,51 @@
+Ex 1 :
+
+1. Créer une variable age
+2. Demander d'entrer son age
+3. age <- age entré
+4. Si age > 18 la personne est majeur, afficher ' La personne est majeur'
+7. Sinon, afficher 'La personne est mineur'
+
+Ex 2 :
+
+1. Créer une variable mot_de_passe_saisi
+2. Demander d'entrer son mot de passe
+3. mot_de_passe_saisi <- mot de passe entré
+4. Si mot_de_passe_saisi =! mot_de_passe_attendu, afficher 'Le mot de passe n'est pas bon
+5. Sinon, Afficher 'Le mot de passe est ok'
+
+Variante:
+1. Créer une variable mot_de_passe_saisi
+2. Demander d'entrer son mot de passe
+3. mot_de_passe_saisi <- mot de passe entré
+4. Si mot_de_passe_saisi <= 12 caractère, afficher'Le mot de passe est trop court'
+5. Sinon si mot_de_passe_saisi =! mot_de_passe_attendu
+6. Afficher 'Le mot de passe n'est pas bon
+7. Sinon, Afficher 'Le mot de passe est ok'
+
+Ex 3 : 
+
+1: Créer une variable note
+2. Demander d'entrer la note
+3. note <- note entré
+4. Si note >= 10, afficher "Admis"
+5. Sinon, afficher "Refusé"
+
+Variante:
+1: Créer une variable note
+2. Demander d'entrer la note
+3. note <- note entré
+4. Si note >= 10, afficher "Admis"
+5. Sinon, afficher "Refusé"
+5. Si note > 16, afficher "Très bien"
+6. Si note > 14, afficher "Bien"
+7.Si note > 10, afficher "Passable"
+
+Ex 4 :
+
+1.Créer une variable couleur_du_feu
+2. Demander d'entrer la couleur_du_feu
+3. couleur_du_feu <- couleur du feu entrée
+4. Si couleur_du_feu = "rouge", Stop
+5. Si couleur_du_feu = "orange", Ralentir
+6. Si couleur_du_feu = "vert", Avancer
