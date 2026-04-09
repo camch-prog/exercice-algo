@@ -3,7 +3,7 @@ Ex 1 :
 1.
 
 SOUS ALGORITHME CalculTVA(PrixHT, TauxTVA)
-	MontantTVA<-PrixHT*TauxTVA
+	MontantTVA<-PrixHT * TauxTVA 
 	RETOURNER MontantTVA
 FIN
 
@@ -18,7 +18,7 @@ montauxTVA <- valeur rentrée
 
 monmontantTVA<-CalculTVA(monprixHT, montauxTVA)
 
-Afficher "Le prix TTC est "+ monmontantTVA + monprixHT + "€"
+Afficher "Le prix TTC est "+ (monmontantTVA + monprixHT )+ "€"
 
 Ex 3 : 
 
