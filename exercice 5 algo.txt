@@ -1,0 +1,65 @@
+Ex 1 :
+
+1.
+
+SOUS ALGORITHME CalculTVA(PrixHT, TauxTVA)
+	MontantTVA<-PrixHT*TauxTVA
+	RETOURNER MontantTVA
+FIN
+
+2.
+
+Creer une variable monprixHT
+Demander prix HT
+monprixHT <- valeur rentrée 
+Creer une variable montauxTVA
+Demander le taux de TVA
+montauxTVA <- valeur rentrée 
+
+monmontantTVA<-CalculTVA(monprixHT, montauxTVA)
+
+Afficher "Le prix TTC est "+ monmontantTVA + monprixHT + "€"
+
+Ex 3 : 
+
+1.
+
+SOUS ALGORITHME calculerMoyenne(note1,note2,note3)
+	totalnote <- note1 + note 2 +note3
+	moyenne <- totalnote / 3
+	RETOURNER moyenne
+FIN
+
+SOUS ALGORITHME attribuerMention(moyenne)
+	SI moyenne>= 16 
+	RETOURNER "Très bien"
+	FIN SI
+	SI moyenne>= 14 
+	RETOURNER "Bien"
+	FIN SI
+	SI moyenne>= 12 
+	RETOURNER "Assez bien"
+	FIN SI
+	SI moyenne>= 10 
+	RETOURNER "Passable"
+	FIN SI
+	SI moyenne < 10 
+	RETOURNER "Insuffisant"
+	FIN SI
+FIN
+
+2.
+Créer une variable notes1
+Demander à l'utilisateur de rentrer la premiere note
+note1 <-  valeur entrée par l'utilisateur
+Créer une variable notes2
+Demander à l'utilisateur de rentrer la deuxieme note
+note2 <-  valeur entrée par l'utilisateur
+Créer une variable notes3
+Demander à l'utilisateur de rentrer la troisieme note
+note3 <-  valeur entrée par l'utilisateur
+
+moyenneUtilisateur <- calculerMoyenne(note1,note2,note3)
+mentionUtilisateur <- attribuerMention(moyenneUtilisateur)
+
+Afficher ("La moyenne est de " + moyenneUtilisateur + ' la mention est ' + moyenneUtilisateur)
