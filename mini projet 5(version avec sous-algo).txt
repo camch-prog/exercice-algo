@@ -1,0 +1,58 @@
+FONCTION calculerMoyenne(notes)
+	FOR note dans notes 
+		somme_note <- somme_note + note
+	FIN FOR
+	moyenne <- somme_notes / taille de notes
+	RETOURNER moyenne
+FIN
+
+FONCTION calculerMeilleureNote(notes)
+	meilleure_note<- notes[0]
+	FOR note dans notes 
+		SI meilleure_note < note
+			meilleure_note <- note
+		FIN SI
+	FIN FOR
+	RETOURNER meilleure_note
+FIN
+	
+
+FONCTION calculerMoinsBonneNote(notes)
+	moins_bonne_note<- notes[0]
+	FOR note dans notes
+		SI moins_bonne_note > note
+			moins_bonne_note <- note
+
+		FIN SI
+	FIN FOR
+	RETOURNER moins_bonne_note
+FIN
+
+FONCTION calculerAdmis(notes)
+	eleve_admis <-0
+	FOR note dans notes
+		SI note >= 10
+			eleve_admis <- eleve_admis + 1
+		FIN SI
+	FIN FOR
+	RETOURNER eleve_admis
+FIN
+
+
+créer un tableau notes_eleves
+demander à l'utilisateur de rentrer les notes des élèves
+
+
+SI taille de notes_eleves >=1	
+	moyenne <- calculerMoyenne(notes_eleves)
+	meilleure_note <-calculerMeilleureNote(notes_eleves)
+	moins_bonne_note <- calculerMoinsBonneNote(notes_eleves)
+	eleve_admis <- calculerAdmis(notes_eleves)
+
+
+Afficher "La moyenne est de " + moyenne +" La meilleure note est de "+ meilleure_note + " La moins bonne note est de " + moins_bonne_note +" Le nombre d'élèves admis est de "+ eleve_admis"
+	
+
+SINON
+	Afficher "ERREUR : Aucune note à traiter"
+FIN SI

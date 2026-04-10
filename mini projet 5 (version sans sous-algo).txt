@@ -1,0 +1,33 @@
+créer un tableau notes_eleves 
+demander à l'utilisateur de rentrer les notes des élèves 
+notes_eleves <- notes rentrées 
+
+meilleure_note<- notes_eleves[0] 
+moins_bonne_note<- notes_eleves[0] 
+total_eleves <- 0 
+eleve_admis <-0 
+moyenne <- 0 
+
+SI taille de notes_eleves >=1 
+	FOR note dans notes_eleves 
+		total_eleves<- total_eleves + notes_eleves 
+		moyenne <- total_eleves / nombre d'éléments de notes_eleves
+
+ 		SI meilleure_note < note
+ 			meilleure_note <- note 
+		FIN SI 
+
+		SI moins_bonne_note > note 
+			moins_bonne_note <- note 
+		FIN SI 
+
+		SI note > 10 
+			eleve_admis <- eleve_admis+1 
+		FIN SI 
+	FIN FOR 
+
+	Afficher "La moyenne est de " + moyenne +" La meilleure note est de "+ meilleure_note + " La moins 	bonne note est de " + moins_bonne_note " Le nombre d'élèves admis est de "+ eleves_admis"
+
+SINON Afficher "ERREUR : Aucune note à traiter"
+
+FIN SI

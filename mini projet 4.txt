@@ -1,0 +1,45 @@
+FONCTION inscriptionUtilisateur()
+
+	demander à l'utilisateur son adresse email
+	SI l'adresse email ne contient pas ...@... . ...
+		Afficher "Le format n'est pas valide."
+	SINON 	
+		adresse_utilisateur <- adresse rentrée
+
+	FIN SI
+
+
+	demander à l'utilisateur d'entrer son mot de passe
+	SI mot de passe entré n'est pas assez long
+		Afficher "Votre mot de passe n'est pas assez long."
+	SINON SI mot de passe ne contient pas un caractère spécial
+		Afficher "Votre mot de passe doit contenir un caractère spécial."
+	SINON 
+		mdp_utilisateur <- mdp rentré
+	FIN SI
+
+
+	demander l'age à l'utilisateur,
+	age_utilisateur<- age rentré
+
+	compte<- [adresse_utilisateur, mdp_utilisateur,age_utilisateur]
+	RETOURNER compte
+FIN
+
+
+
+informations_utilisateur <- inscriptionUtilisateur()
+etat_de_connexion <- True si l'ulisateur est connecté
+
+
+SI clic sur page age minimum 
+	SI age <= 18 
+		Afficher "Vous ne pouvez pas accéder à cette page"
+	SINON 
+		changer de page
+
+SI clic sur page connexion necéssaire 
+	SI etat_de_connexion == True
+		changer de page
+	SINON
+		Afficher "Vous devez vous connecter pour acceder à cette page"
