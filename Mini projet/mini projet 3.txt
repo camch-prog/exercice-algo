@@ -1,0 +1,30 @@
+créer une variable identifiant_entre
+
+créer mot_de_passe_entre 
+
+nombre_tentative <- 0
+
+
+demander a l'utilisateur de rentrer son adresse
+identifiant_entre <- identifiant entré par l'utilisateur
+
+TANT QUE identifiant_entre != identifiant dans la base de donnée
+	Afficher " Il n'y a pas de compte avec cette adresse e-mail."
+FIN TANT QUE
+
+demander a l'utilisateur de rentrer son mot de passe
+mot_de_passe_entre <- mot de passe entré par l'utilisateur
+
+SI mot_de_passe_entre != mot_de_passe_associe_au_compte
+	FOR nombre_tentative < 3 OU mot_de_passe_entre == mot_de_passe_associe_au_compte
+		nombre_tentative <- nombre_tentative + 1
+		Afficher ""Le mot de passe est incorrect ! Tentative restante : "+ (3 - nombre_tentative)"
+	FIN FOR
+	SI nombre_tentative = 3 
+		Afficher "Vous avez fait trop de tentatives, votre compte est bloqué"
+		Bloquer le compte
+	FIN SI
+FIN SI
+
+SI mot_de_passe_entre === mot_de_passe_associe_au_compte
+	Connexion de l'utilisateur 

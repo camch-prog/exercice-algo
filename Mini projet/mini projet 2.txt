@@ -1,0 +1,24 @@
+Créer un tableau panier[]
+Demander a l'utilisateur d'ajouter un article
+panier <- ajout de [[item, prix]]
+
+FONCTION calculTotalPanier(panier)
+	total_panier <- 0 
+	POUR item dans panier
+		total_panier <- total_panier + item[1]
+	FIN POUR 
+	RETROUNER total_panier
+FIN
+
+SI taille du panier > 0
+	total_panier<-calcultotalPanier(panier)
+
+	SI total_panier > 100
+		total_panier <- total_panier * 0.90
+	FIN SI
+	Afficher ""Votre commande est valide, votre total est de " + total_panier + "€""
+	
+SINON 
+	Afficher "Votre panier est vide"
+
+FIN SI

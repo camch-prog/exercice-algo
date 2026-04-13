@@ -1,0 +1,21 @@
+grille <- [
+[0,1,2,3],
+[4,5,6,7],
+[8,9,10,11],
+[12,13,14,15]
+]
+
+
+Demander à l'utilisateur un nombre spécifique
+nombre_specifique<- nombre entré par l'utilisateur
+
+POUR i dans grille
+	POUR j dans grille[j]
+		SI nombre_speficique == j
+			Afficher ""Le nombre " + nombrespecifique + "est dans le tableau il est ligne : " + grille[i] +" colonne : "+grille[i][j]""
+		SINON
+			Afficher "le nombre n'est pas dans le tableau"
+
+		FIN SI
+	FIN POUR
+FIN POUR

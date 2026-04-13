@@ -1,0 +1,32 @@
+notes<-[
+[14,15,16,20,18],
+[8,7,5,10,14],
+[12,10,18,10,14]
+]
+
+somme_classe<-0
+somme_total<-0
+moyenne_classe <- 0
+moyenne globale <- 0
+nombre_total_note <- 0
+
+
+POUR j de notes[i] // i = la classe dont on veut calculer la moyenne
+	somme_classe <- somme_classe + j
+FIN POUR 
+
+moyenne_classe <-  somme_classe / longeur de notes[i]
+
+Afficher ""la moyenne de la classe est " + moyenne_classe"
+
+POUR i de notes 
+	POUR j de notes[i]
+		somme_total <- somme_total + notes[i]
+		nombre_total_note<- nombre_total_note + 1
+	FIN POUR 
+FIN POUR
+
+moyenne_globale <- somme_total <- nombre_total_note
+
+
+Afficher ""la moyenne globale est " + moyenne_globale"

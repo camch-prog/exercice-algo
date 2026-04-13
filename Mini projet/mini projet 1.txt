@@ -1,0 +1,37 @@
+créer une variable nombre_aléatoire
+l'ordinateur choisis un chiffre aléatoire entre 1 et 100
+nombre_aléatoire <- le nombre choisi par l'ordinateur
+créer une variable combien_tentative
+
+demander à l'utilisateur combien d'essai il veut pour cette partie
+combien_tentative <- nombre d'essai indiqué par l'utilisateur
+créer une variable nombre_de_tentative 
+
+nombre_de_tentative <- 0
+
+TANT QUE nombre_de_tentative <= combien_tentative
+
+	créer une variable nombre_utilisateur
+	demander à l'utilisateur quel nombre il veut essayer
+	nombre_utilisateur <- nombre donné par l'utilisateur
+	
+	SI nombre_utilisateur > nombre_aléatoire
+		Afficher "Le nombre est plus petit"
+		nombre_de_tentative <- nombre_de_tentative +1
+			SI nombre_de_tentative=combien_tentative
+				Afficher "Vous avez perdu"
+			FIN SI
+
+	SINON SI nombre_utilisateur < nombre_aléatoire
+		Afficher "Le nombre est plus grand"
+		nombre_de_tentative <- nombre_de_tentative +1
+			SI nombre_de_tentative=combien_tentative
+				Afficher "Vous avez perdu"
+			FIN SI
+
+	SINON
+		Afficher "Bravo vous avez gagné"
+		nombre_de_tentative <- combien_tentative
+
+	FIN SI
+FIN TANT QUE

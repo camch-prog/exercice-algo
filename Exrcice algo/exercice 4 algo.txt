@@ -1,0 +1,44 @@
+Ex 1 : 
+
+1. tableau <- [1,2,3]
+2. FOR i de 0 dans longeur(tableau) -1
+	afficher (index i de tableau)
+   Fin FOR 
+
+Ex 2 :
+
+1. note <- [15,16,20]
+2.FOR i de 0 dans longeur(note) -1
+	total <- += i
+  Fin FOR
+3. moyenne <- total / longeur(note)
+4. afficher ( "La moyenne est de "+ moyenne)
+	
+Ex 3 : 
+
+1.nombres <- [1,2,3,4]
+2.nombre_le_plus_grand <- index 0 de nombres
+3.nombre_le_plus_petit <- index 0 de nombres
+4.FOR i de 1 dans longeur(nombres) -1
+	SI index 0 de nombres < i
+		nombre_le_plus_grand <- i
+	FIN SI 
+	SI index 0 de nombres > i
+		nombre_le_plus_petit <-i
+	FIN SI
+  FIN FOR 
+5. Afficher ("le nombre le plus grand est : "+ nombre_le_plus_grand+ "et le nombre le plus petit est" + nombre_le_plus_petit)
+
+
+		
+
+Ex 4 :
+
+1.tableau<-[1,2,3,4]
+2.taille_tableau <-0 
+3.FOR i de 0 dans longeur(tableau)
+	taille_tableau <- += 1
+  FIN FOR 
+4.affciher ("la taille du tableau est : "+ taille_tableau)
+	
+

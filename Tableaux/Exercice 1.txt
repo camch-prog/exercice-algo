@@ -1,0 +1,17 @@
+grille <- [
+	[ , , ],
+	[ , , ],
+	[ , , ]
+]
+
+[0][0]<-X
+[0][1]<-O
+[1][0]<-X
+[2][0]<-O
+
+POUR i de grille
+	POUR j de grille[i]
+		Afficher matrice [i][j] + " "
+	FIN POUR 
+	AFFICHER ""
+FIN POUR

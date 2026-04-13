@@ -1,0 +1,32 @@
+Exercice 1 : 
+
+1.Pour i dans 1 à 20
+	Si i % 2 == 0
+	print i
+ Fin Pour
+
+
+Exercice 2 
+
+1.compteur <- 10
+2.Pour i dans 0 à 10
+	print( compteur ) 
+	compteur <- compteur - i
+ Fin Pour
+
+
+Exercice 3
+1. nombre_essai <- 1 
+2. Tant que nombre_essai <= 3
+	print ( "Vous avez essayé" + nombre d'essai + "fois." )
+	nombre_essai += 1
+   Fin Tant que	
+
+
+Exercice 4 
+1. Créer une variable nombre_a_multiplier
+2. Demander un nombre à multiplier
+3. nombre_a_multiplier <- nombre rentré 
+4. Pour i dans 1 à 10
+	print( nombre_a_multiplier + "*" +  i +" est égal à : " + nombre_a_multiplier*i )
+   Fin Pour

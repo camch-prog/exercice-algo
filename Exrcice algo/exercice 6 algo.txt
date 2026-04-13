@@ -1,0 +1,59 @@
+ex 1 : 
+
+erreur : SI age > 18 
+
+correction:
+age <- 16 
+	SI age >= 18
+		Afficher "Majeur"
+	SINON
+		Afficher "Mineur"
+	FIN SI
+
+ex 2 :
+
+erreur : somme <- note
+
+correction:
+
+notes <- [10,12,14]
+somme <- 0 
+	POUR chaque note dans notes
+		somme <- somme + note
+
+	FIN POUR
+moyenne <- somme/3
+Afficher moyenne
+
+ex 3 :
+
+erreur : pas de condition ELSE
+
+correction:
+note <- 8 
+
+SI note >= 10
+	Afficher "Admis"
+SINON
+	Afficher "Non Admis"
+FIN SI
+
+ex 4 : 
+
+erreur: nimporte quel type de donné peut etre donné dans le tableau
+
+correction:
+note <- []
+somme <- 0 
+
+	SI elements de notes n'est pas un chiffre 
+		Afficher "Le type de données doit etre un nombre"
+	FIN SI
+
+	POUR chaque note dans notes
+		somme <- somme + note
+	FIN POUR
+
+moyenne <- somme / nombre d'éléments de notes
+
+Afficher moyenne
