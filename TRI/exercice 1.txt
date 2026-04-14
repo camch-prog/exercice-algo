@@ -1,0 +1,30 @@
+Exercice 1 :
+
+tableau <- [5, 1, 4, 2, 8]
+
+
+Passage 1(i):
+Comparer 5(j) et 1(j+1)->échanger
+[1,5,4,2,8]
+Comparer 5(j) et 4(j+1)->échanger
+[1,4,5,2,8]
+Comparer 5(j) et 2(j+1)->échanger
+[1,4,2,5,8]
+Comparer 5(j) et 8(j+1)->OK
+[1,4,2,5,8]
+
+Passage 2(i):
+Comparer 1(j) et 4(j+1) -> OK
+[1,4,2,5,8]
+Comparer 4(j) et 2(j+1) -> échanger
+[1,2,4,5,8]
+Comparer 4(j) et 5(j+1) -> OK 
+[1,2,4,5,8]
+
+Passage 3(i):
+Comparer 1(j) et 4(j+1) -> OK
+[1,2,4,5,8]
+Comparer 2(j) et 4(j+1) -> OK
+[1,2,4,5,8]
+
+Tableau Trié
