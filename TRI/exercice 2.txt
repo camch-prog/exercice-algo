@@ -87,7 +87,7 @@ indexMin commence à 4 (valeur 29)
 j=5 : 29 < 37 -> indexMin = 4
 
 
-minimum = 29 (index 5 )
+minimum = 29 (index 4 )
 
 Les données restent les memes
 
