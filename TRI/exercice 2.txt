@@ -1,0 +1,98 @@
+Exercice 2 : 
+
+tableau <- [29, 10, 14, 37, 13, 25]
+
+Passage 1 : Trouver le minimum de position 0 à 5 et le placer ebn position 0
+
+Chercher le minimum de index 0 à 5 :
+indexMin commence à 0 (valeur 29) 
+
+j=1 : 29 > 10 -> indexMin = 1
+j=2 : 10 < 14 -> indexMin = 1
+j=3 : 10 < 37 -> indexMin = 1
+j=4 : 10 < 13 -> indexMin = 1
+j=5 : 10 < 25 -> indexMin = 1
+
+minimum  = 10 ( index 1 ) 
+Echanger tableau[0] et tableau[1]
+
+résultat : [10, 29, 14, 37, 13, 25]
+
+
+
+
+
+Passage 2 : Trouver le minimum de position 1 à 5
+
+Chercher le minimum de index 1 à 4 :
+indexMin commence à 1 (valeur 29) 
+
+j=2 : 29 > 14 -> indexMin = 2
+j=3 : 14 < 37 -> indexMin = 2
+j=4 : 14 > 13 -> indexMin = 4
+j=5 : 13 < 25 -> indexMin = 4
+
+
+minimum = 13 (index 4 )
+Echanger tableau[1] et tableau[4]
+
+résultat : [10, 13, 14, 37, 29, 25]
+
+
+
+
+
+Passage 3 : Trouver le minimum de position 2 à 5
+
+Chercher le minimum de index 2 à 4 :
+indexMin commence à 2 (valeur 14) 
+
+j=3 : 14 < 37 -> indexMin = 3
+j=4 : 14 < 29 -> indexMin = 3
+j=5 : 14 < 25 -> indexMin = 3
+
+
+minimum = 14 (index 3 )
+
+Les données restent les memes
+
+résultat : [10, 13, 14, 37, 29, 25]
+
+
+
+
+
+Passage 4 : Trouver le minimum de position 3 à 5
+
+Chercher le minimum de index 3 à 4 :
+indexMin commence à 3 (valeur 37) 
+
+j=4 : 37 < 29 -> indexMin = 4
+j=5 : 29 > 25 -> indexMin = 5
+
+
+minimum = 25 (index 5 )
+
+Echanger tableau[3] et tableau[5]
+
+résultat : [10, 13, 14, 25, 29, 37]
+
+
+
+Passage 5 : Trouver le minimum entre position 4 et 5
+
+Chercher le minimum de index 3 à 4 :
+indexMin commence à 4 (valeur 29) 
+
+j=5 : 29 < 37 -> indexMin = 4
+
+
+minimum = 29 (index 5 )
+
+Les données restent les memes
+
+résultat : [10, 13, 14, 25, 29, 37]
+
+La boucle est finie
+
+
