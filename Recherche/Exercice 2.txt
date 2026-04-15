@@ -1,0 +1,15 @@
+nombres[1,21,30,45,55,55,60]
+
+On demande  à l'utilisateur de rentrer un nombre
+nombreEntre<- nombre rentré par l'utilisateur
+
+nombreApparition<-0
+
+FOR i dans nombres
+	SI nombreEntre = nombres[i]
+		nombreApparition <- nombreApparition +1
+	FIN SI
+FIN POUR 
+
+Afficher "Le nombre nombre "+nombreEntre + " apparait " + nombreApparition + " fois."
+

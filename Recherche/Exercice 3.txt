@@ -1,0 +1,54 @@
+tableau <- [2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+
+FONCTION rechecheDichotomique(tableau, element)
+	debut <- 0 
+	fin <- longueur(tableau) - 1
+
+	TANT QUE debut<=fin
+		milieu <-arrondi((debut+fin)/2)
+		SI tableau[milieu] = element
+			RETOURNER milieu
+		SINON SI tableau[milieu] < element
+			debut <- milieu + 1
+		SINON 
+			fin <- milieu -1
+		FIN SI 
+	FIN TANT QUE
+		
+	RETOURNER -1
+FIN FONCTION
+
+rechecheDichotomique(tableau, 23)
+
+ETAPE 1 : 
+debut = 0, fin = 10
+milieu = (0+10)/2 = 5
+tableau [5] = 23
+23=23 Trouvé 
+RETOURNER 5
+
+rechecheDichotomique(tableau, 5)
+
+ETAPE 1 : 
+debut = 0, fin = 10
+milieu = (0+10)/2 = 5
+tableau [5] = 23
+23>5 chercher en dessous
+fin = 4
+
+ETAPE 2 : 
+debut = 0, fin = 4
+milieu = (0+4)/2 = 2
+tableau [2] = 8
+8>5 chercher en dessous
+fin = 1
+
+ETAPE 3 :
+ 
+debut = 0, fin = 1
+milieu = (0+1)/2 = 0.5 (arrondi 1)
+tableau [1] = 5
+5 = 5 Trouvé
+RETOURNER 1
+
+
