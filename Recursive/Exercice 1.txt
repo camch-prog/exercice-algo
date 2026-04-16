@@ -1,0 +1,24 @@
+Exercice 1 : 
+
+FONCTION somme (n) 
+
+	SI n=0 				// Cas de base
+		RETOURNE 0
+	SINON 				// Cas récursif
+		RETOURNE n+somme(n-1)
+	FIN SI
+FIN FONCTION
+
+resultat <- somme(4)
+
+apelle somme(4) [4 + 4-3]
+	↓ apelle somme(3) 
+	somme(3) [
+		↓ apelle somme(2)
+		somme(2)
+			↓ apelle somme(1)
+			somme(1)
+				↓ apelle somme(0)
+				somme(0)
+
+resultat =  15

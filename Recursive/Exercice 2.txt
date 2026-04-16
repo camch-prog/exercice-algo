@@ -1,0 +1,27 @@
+Exercice 2 : 
+
+
+FONCTION puissance(x, n) 
+
+	SI n=0				// Cas de base
+		RETOURNE 1
+	SINON				// Cas récursif
+		RETOURNE x * puissance(x, n-1)
+
+	FIN SI
+FIN FONCTION
+
+resulat <- puissance(2,4)
+
+puissance(2,4)
+	↓ appelle puissance(2,3)
+		↓ appelle puissance(2,2)
+			↓ appelle puissance(2,1)
+				↓ appelle puissance(2,0) (cas de base)
+				puissance(0) -> retourne 1
+			← retourne 1*4 = 4
+		← retourne 2*4 = 8
+	← retourne 3*4 = 12
+← retourne 4*4 = 16
+
+resultat <- 16
